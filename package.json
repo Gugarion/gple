@@ -2,7 +2,7 @@
   "name": "gple",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://Gugarion.github.io/GPLE",
+  "homepage": "https://gugarion.github.io/gple",
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",

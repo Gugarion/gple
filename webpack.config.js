@@ -8,7 +8,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
-      publicPath: isProd ? '/GPLE/' : '/',
+      publicPath: isProd ? '/gple/' : '/',
     },
     module: {
       rules: [
