@@ -4,25 +4,6 @@ import '../pages/Home.css';
 import ServiceItem from '../components/ServiceItem';
 import { residentialServices, commercialServices } from '../data/services';
 
-const testimonials = [
-  {
-    name: 'Sarah M.',
-    text: 'GPLE rewired our entire home with professionalism and care. The team explained every step and finished ahead of schedule. Highly recommended for any family!'
-  },
-  {
-    name: 'Tom R. (Store Manager, Best Buy)',
-    text: 'Gary and his crew handled our big box store lighting upgrade flawlessly. Their experience with large-scale retail projects is unmatched.'
-  },
-  {
-    name: 'Dr. Patel (Mesa Medical Center)',
-    text: 'We trusted GPLE with sensitive MRI suite wiring. Their attention to safety and technical detail gave us total peace of mind.'
-  },
-  {
-    name: 'Mike & Jen P.',
-    text: 'Quick troubleshooting and honest advice. GPLE is our go-to for any electrical issue, big or small.'
-  }
-];
-
 function Home() {
   return (
     <div className="home">
@@ -52,17 +33,6 @@ function Home() {
           <li>Licensed, bonded, and insured for your peace of mind</li>
           <li>Serving Mesa, Gilbert, Chandler, Tempe, and the greater Phoenix area</li>
         </ul>
-      </section>
-      <section className="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div className="testimonials-list">
-          {testimonials.map((t, idx) => (
-            <blockquote key={idx} className="testimonial">
-              <p>"{t.text}"</p>
-              <footer>- {t.name}</footer>
-            </blockquote>
-          ))}
-        </div>
       </section>
     </div>
   );

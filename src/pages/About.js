@@ -1,5 +1,10 @@
 import React from 'react';
 import '../pages/About.css';
+import bestbuyLogo from '../media/bestbuy.svg';
+import homedepotLogo from '../media/homedepot.svg';
+import chandlerLogo from '../media/chandlerregional.svg';
+import mesaLogo from '../media/cityofmesa.svg';
+import genericLogo from '../media/genericclient.svg';
 
 function About() {
   return (
@@ -28,14 +33,38 @@ function About() {
       </section>
       <section className="about-testimonials">
         <h2>Testimonials</h2>
-        <blockquote className="testimonial">
-          <p>"Gary and his team handled our office build-out with professionalism and care. The results exceeded our expectations!"</p>
-          <footer>- Lisa G., Small Business Owner</footer>
-        </blockquote>
-        <blockquote className="testimonial">
-          <p>"We needed a fast panel upgrade for our new appliances. GPLE delivered on time and on budget."</p>
-          <footer>- The Johnson Family</footer>
-        </blockquote>
+        <div className="testimonials-list">
+          <blockquote className="testimonial">
+            <p>"Gary and his team handled our office build-out with professionalism and care. The results exceeded our expectations!"</p>
+            <footer>- Lisa G., Small Business Owner</footer>
+          </blockquote>
+          <blockquote className="testimonial">
+            <p>"We needed a fast panel upgrade for our new appliances. GPLE delivered on time and on budget."</p>
+            <footer>- The Johnson Family</footer>
+          </blockquote>
+          <blockquote className="testimonial">
+            <p>"GPLE’s attention to detail and safety on our medical facility project was outstanding. Highly recommended for technical work."</p>
+            <footer>- Dr. Patel, Mesa Medical Center</footer>
+          </blockquote>
+          <blockquote className="testimonial">
+            <p>"Professional, honest, and always on time. We trust GPLE for all our commercial electrical needs."</p>
+            <footer>- Tom R., Best Buy Store Manager</footer>
+          </blockquote>
+          <blockquote className="testimonial">
+            <p>"Gary’s team was courteous and explained everything. The new lighting in our home is perfect!"</p>
+            <footer>- Sarah M., Homeowner</footer>
+          </blockquote>
+        </div>
+      </section>
+      <section className="trusted-by">
+        <h2>Trusted By</h2>
+        <div className="trusted-logos">
+          <img src={bestbuyLogo} alt="Best Buy" />
+          <img src={homedepotLogo} alt="Home Depot" />
+          <img src={chandlerLogo} alt="Chandler Regional Medical Center" />
+          <img src={mesaLogo} alt="City of Mesa" />
+          <img src={genericLogo} alt="Generic Commercial Client" />
+        </div>
       </section>
     </div>
   );

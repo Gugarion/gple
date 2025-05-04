@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
+import Logo from './Logo';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-brand">
-          <img src="/branding/GPL2.png" alt="GPLE Logo" className="footer-logo" height="32" />
+          <Logo className="footer-logo" height={32} />
           <div className="footer-company">Gary Paul Law Electric</div>
         </div>
         <div className="footer-contact">

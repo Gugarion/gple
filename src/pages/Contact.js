@@ -4,7 +4,9 @@ import '../pages/Contact.css';
 function Contact() {
   return (
     <div className="contact-page">
-      <h1>Get In Touch</h1>
+      <section className="contact-hero">
+        <h1>Get In Touch</h1>
+      </section>
       <section className="contact-details">
         <p><strong>Gary Paul Law Electric</strong></p>
         <p>456 Desert Bloom Ln, Mesa, AZ 85201</p>
@@ -29,9 +31,6 @@ function Contact() {
         </form>
         {/* Optional: Map placeholder */}
         {/* <div className="map-placeholder">[Map will be embedded here]</div> */}
-      </section>
-      <section className="contact-note">
-        <p>Choose the contact method that suits your needs: Chatbot for urgent questions, phone for direct service, or the email form for general inquiries.</p>
       </section>
     </div>
   );
