@@ -1,0 +1,27 @@
+.services-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.services-section {
+  margin-bottom: 2.5em;
+}
+
+.services-section h2 {
+  margin-bottom: 1em;
+  color: var(--primary-blue);
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+@media (max-width: 700px) {
+  .services-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+}

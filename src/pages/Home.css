@@ -1,0 +1,89 @@
+.home {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.hero {
+  background: linear-gradient(90deg, var(--primary-blue) 60%, var(--secondary-gold) 100%);
+  color: #fff;
+  padding: 2.5em 1em 2em 1em;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.cta-btn {
+  margin-top: 1.5em;
+  font-size: 1.1em;
+}
+
+.intro {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.services-preview {
+  margin-bottom: 2em;
+}
+
+.services-list {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.more-services-link {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.values-area {
+  background: #fffbe6;
+  border: 1px solid var(--secondary-gold);
+  border-radius: 6px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.values-area ul {
+  list-style: disc inside;
+  margin-top: 0.5em;
+}
+
+.testimonials {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1.5em;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.testimonial {
+  background: var(--bg-light);
+  border-left: 4px solid var(--primary-blue);
+  padding: 1em;
+  border-radius: 4px;
+  max-width: 320px;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .services-list, .testimonials-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .hero {
+    padding: 1.5em 0.5em 1em 0.5em;
+  }
+}

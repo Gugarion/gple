@@ -1,0 +1,48 @@
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.about-story {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+
+.about-values {
+  background: #fffbe6;
+  border: 1px solid var(--secondary-gold);
+  border-radius: 6px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.about-values ul {
+  list-style: disc inside;
+  margin-top: 0.5em;
+}
+
+.about-testimonials {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1.5em;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+
+.testimonial {
+  background: var(--bg-light);
+  border-left: 4px solid var(--primary-blue);
+  padding: 1em;
+  border-radius: 4px;
+  max-width: 320px;
+  font-style: italic;
+  margin: 1em auto;
+}
