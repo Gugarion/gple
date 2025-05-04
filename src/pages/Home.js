@@ -27,8 +27,9 @@ function Home() {
   return (
     <div className="home">
       <section className="hero">
-        <h1>Expert Electrical Services Built on 20 Years of Trust</h1>
-        <p>Residential & Commercial Solutions for Mesa, AZ and Beyond</p>
+        <div className="hero-years">Built on 20 Years of <span style={{color:'#004080', background:'#ffe066', padding:'0 0.3em', borderRadius:'4px'}}>Trust</span></div>
+        <h1 className="hero-title">Expert Electrical Services</h1>
+        <p className="hero-sub">Residential & Commercial Solutions for Mesa, AZ and Beyond</p>
         <Link to="/contact" className="cta-btn">Get a Quote</Link>
       </section>
       <section className="intro">

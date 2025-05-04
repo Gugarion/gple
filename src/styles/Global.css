@@ -1,9 +1,9 @@
 :root {
   --primary-blue: #004080;
   --secondary-gold: #ffc107;
-  --neutral-grey: #6c757d;
-  --text-dark: #343a40;
-  --bg-light: #f8f9fa;
+  --neutral-grey: #222b36;
+  --bg-light: #f7f9fa;
+  --text-main: #222b36;
 }
 
 * {
@@ -13,18 +13,21 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: var(--text-dark);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
   background: var(--bg-light);
-  line-height: 1.6;
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 a {
   color: var(--primary-blue);
   text-decoration: none;
+  transition: color 0.2s;
 }
 
-a:hover, .active {
+a:hover, a:focus {
   color: var(--secondary-gold);
 }
 
@@ -34,6 +37,7 @@ h1, h2, h3, h4, h5 {
 }
 
 button, .cta-btn {
+  font-family: inherit;
   background: var(--primary-blue);
   color: #fff;
   border: none;

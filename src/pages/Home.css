@@ -8,9 +8,58 @@
   background: linear-gradient(90deg, var(--primary-blue) 60%, var(--secondary-gold) 100%);
   color: #fff;
   padding: 2.5em 1em 2em 1em;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
   margin-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 180px;
+  background: url('/branding/GPL2.png') no-repeat center/contain, transparent;
+  opacity: 0.13;
+  pointer-events: none;
+  z-index: 0;
+  filter: grayscale(1) brightness(2) drop-shadow(0 0 16px #fff8);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .hero-title {
+  font-size: 2.2em;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  margin-bottom: 0.3em;
+}
+
+.hero .hero-sub {
+  font-size: 1.2em;
+  color: #e6e6e6;
+  margin-bottom: 1.2em;
+}
+
+.hero .hero-years {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #ffe066;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 
 .cta-btn {
@@ -40,6 +89,12 @@
   margin-top: 0.5em;
   color: var(--primary-blue);
   font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.more-services-link:hover, .more-services-link:focus {
+  color: var(--secondary-gold);
 }
 
 .values-area {
@@ -85,5 +140,14 @@
   }
   .hero {
     padding: 1.5em 0.5em 1em 0.5em;
+    max-width: 98vw;
+  }
+  .hero::after {
+    width: 90px;
+    height: 90px;
+    right: 2%;
+  }
+  .hero .hero-title {
+    font-size: 1.3em;
   }
 }
