@@ -8,12 +8,20 @@
   text-align: center;
   margin-bottom: 2em;
   position: relative;
+  overflow: hidden;
   background: linear-gradient(90deg, var(--primary-blue) 60%, var(--secondary-gold) 100%);
   color: #fff;
   border-radius: 12px;
   padding: 2.2em 1em 2em 1em;
   box-shadow: 0 8px 32px rgba(0,0,0,0.13);
-  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.22);
+  z-index: 0;
 }
 
 .about-hero::after {
@@ -25,15 +33,15 @@
   width: 120px;
   height: 120px;
   background: url('../media/gpl.png') no-repeat center/contain, transparent;
-  opacity: 0.13;
+  opacity: 0.28;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
   filter: grayscale(1) brightness(2) drop-shadow(0 0 16px #fff8);
 }
 
 .about-hero > * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .about-hero h1 {

@@ -59,11 +59,11 @@ function About() {
       <section className="trusted-by">
         <h2>Trusted By</h2>
         <div className="trusted-logos">
-          <img src={bestbuyLogo} alt="Best Buy" />
-          <img src={homedepotLogo} alt="Home Depot" />
-          <img src={chandlerLogo} alt="Chandler Regional Medical Center" />
-          <img src={mesaLogo} alt="City of Mesa" />
-          <img src={genericLogo} alt="Generic Commercial Client" />
+          <img src={bestbuyLogo} alt="Best Buy company logo" />
+          <img src={homedepotLogo} alt="Home Depot company logo" />
+          <img src={chandlerLogo} alt="Chandler Regional Medical Center logo" />
+          <img src={mesaLogo} alt="City of Mesa logo" />
+          <img src={genericLogo} alt="Generic Commercial Client logo" />
         </div>
       </section>
     </div>

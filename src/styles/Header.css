@@ -6,6 +6,9 @@
   color: #fff;
   padding: 1em 2em;
   box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo-area {
@@ -68,7 +71,47 @@
   align-self: center;
 }
 
-@media (max-width: 700px) {
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1em;
+}
+.nav-toggle-bar {
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+    flex-direction: column;
+    gap: 0.5em;
+    background: var(--primary-blue);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 1em 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    z-index: 99;
+  }
+  .navigation.navigation-open {
+    display: flex;
+  }
   .header {
     flex-direction: column;
     align-items: flex-start;

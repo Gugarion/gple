@@ -26,9 +26,15 @@ function Footer() {
           <a href="tel:6025550198" aria-label="Phone">
             <svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><path d="M6.6 2.7c.5-1.1 1.7-1.6 2.8-1.1l4.2 1.8c1.1.5 1.6 1.7 1.1 2.8l-1.2 2.7c-.4.9-.2 2 .5 2.7l3.7 3.7c.7.7 1.8.9 2.7.5l2.7-1.2c1.1-.5 2.3 0 2.8 1.1l1.8 4.2c.5 1.1 0 2.3-1.1 2.8-4.2 2-9.2 1.2-12.7-2.3-3.5-3.5-4.3-8.5-2.3-12.7z"/></svg>
           </a>
+          <a href="#" aria-label="Instagram" style={{opacity:0.5, pointerEvents:'none'}}>
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><circle cx="16" cy="16" r="14"/><circle cx="16" cy="16" r="7" fill="#fff"/><circle cx="24" cy="8" r="2" fill="#fff"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" style={{opacity:0.5, pointerEvents:'none'}}>
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><rect x="6" y="12" width="4" height="14"/><rect x="14" y="16" width="4" height="10"/><rect x="22" y="10" width="4" height="16"/></svg>
+          </a>
         </div>
         <div className="footer-links">
-          <Link to="/">Home</Link> | <Link to="/services">Services</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link>
+          <Link to="/">Home</Link> | <Link to="/services">Services</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link> | <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> | <a href="/terms" target="_blank" rel="noopener noreferrer">Terms</a>
         </div>
         <div className="footer-copyright">
           &copy; {new Date().getFullYear()} GPLE. All rights reserved.

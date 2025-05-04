@@ -19,6 +19,14 @@
   margin-right: auto;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.22); /* subtle dark overlay for contrast */
+  z-index: 0;
+}
+
 .hero::after {
   content: '';
   position: absolute;
@@ -28,15 +36,15 @@
   width: 180px;
   height: 180px;
   background: url('../media/gpl.png') no-repeat center/contain, transparent;
-  opacity: 0.13;
+  opacity: 0.28; /* increased from 0.13 for better visibility */
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
   filter: grayscale(1) brightness(2) drop-shadow(0 0 16px #fff8);
 }
 
 .hero > * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero .hero-title {
