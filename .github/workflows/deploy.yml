@@ -1,4 +1,4 @@
-﻿# This workflow builds and deploys the site to GitHub Pages using the gh-pages branch
+﻿# This workflow builds and deploys the site to GitHub Pages using the gh-pages branch 
 name: Deploy to GitHub Pages
 
 on:
